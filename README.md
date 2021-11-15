@@ -68,3 +68,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Deploy to local docker 
+
+1. under project folder sudo docker -f DockerFile -t application:mytestclient ( choose your name and tag)
+2. sudo docker run -p 30000:3000 -t application:mytest, you can use docker ps to check your image
+3. open brownser type in http://127.0.0.1
+
+Test coverage
+
+1) Run yarn coverage. See the coverage through command line
+2) access coverage folder, use browser open coverage/lcov-report/index.html in browser. 
